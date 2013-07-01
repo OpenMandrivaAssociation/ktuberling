@@ -2,7 +2,7 @@ Name:		ktuberling
 Version:	4.10.4
 Release:	1
 Epoch:		1
-Summary:	KTuberling: "potato editor" game
+Summary:	: "potato editor" game
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
 URL:		http://www.kde.org/applications/games/ktuberling/
