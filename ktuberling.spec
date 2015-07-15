@@ -15,12 +15,12 @@ who remain young at heart. The game has no winner; the only purpose is to
 make the funniest faces you can.
 
 %files
-%{_bindir}/ktuberling
-%{_datadir}/applications/ktuberling.desktop
-%{_datadir}/ktuberling
-%doc %{_docdir}/*/*/ktuberling
-%{_iconsdir}/hicolor/*/apps/ktuberling.png
-%{_iconsdir}/hicolor/*/mimetypes/application-x-tuberling.png
+%{_kde_bindir}/ktuberling
+%{_kde_applicationsdir}/ktuberling.desktop
+%{_kde_appsdir}/ktuberling
+%{_kde_docdir}/*/*/ktuberling
+%{_kde_iconsdir}/hicolor/*/apps/ktuberling.png
+%{_kde_iconsdir}/hicolor/*/mimetypes/application-x-tuberling.png
 
 #------------------------------------------------------------------------------
 
