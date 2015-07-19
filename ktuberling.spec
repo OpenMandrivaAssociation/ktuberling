@@ -1,6 +1,6 @@
 Name:		ktuberling
 Version:	15.04.3
-Release:	1
+Release:	2
 Epoch:		1
 Summary:	"Potato editor" game
 Group:		Graphical desktop/KDE
