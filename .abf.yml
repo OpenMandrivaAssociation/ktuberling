@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   ktuberling-15.08.0.tar.xz: 07d331dc1cddee6931234ffc7ba7774c3ea9363a
+sources:
+  ktuberling-15.08.1.tar.xz: edf5607123670426e3e537ea882a184b1f4427aa
