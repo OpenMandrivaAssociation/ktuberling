@@ -10,6 +10,7 @@ Source0:	http://download.kde.org/stable/applications/%{version}/src/%{name}-%{ve
 BuildRequires:	libkdegames-devel
 BuildRequires:	kdelibs4-devel
 BuildRequires: 	cmake(KDEGames)
+BuildRequires:	cmake(QT5Test)
 
 %description
 KTuberling is a "potato editor" game intended for small children and adults
