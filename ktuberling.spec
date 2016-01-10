@@ -21,14 +21,19 @@ who remain young at heart. The game has no winner; the only purpose is to
 make the funniest faces you can.
 
 %files
-%{_kde5_bindir}/ktuberling
-%{_kde5_applicationsdir}/ktuberling.desktop
-%{_kde5_appsdir}/ktuberling
+%{_bindir}/ktuberling
+%{_datadir}/applications/org.kde.ktuberling.desktop
+%{_datadir}/ktuberling/pics/*.theme
+%{_datadir}/ktuberling/pics/*.desktop
+%{_datadir}/ktuberling/pics/*.svgz
+%{_datadir}/ktuberling/pics/*.svg
 %{_kde5_docdir}/*/*/ktuberling
 %{_kde5_iconsdir}/hicolor/*/apps/ktuberling.png
 %{_kde5_iconsdir}/hicolor/*/mimetypes/application-x-tuberling.png
-%{_kde5_prefix}//ktuberling/pics/*.*
-%{_kde5_prefix}//ktuberling/sounds/en/*.ogg
+%{_datadir}/ktuberling/sounds/en.soundtheme
+%{_datadir}/ktuberling/sounds/en/*.ogg
+%{_datadir}/kxmlgui5/ktuberling/ktuberlingui.rc
+
 
 #------------------------------------------------------------------------------
 
@@ -40,5 +45,5 @@ make the funniest faces you can.
 %ninja -C build
 
 %install
-
+%ninja_install -C build
 
