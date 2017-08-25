@@ -1,6 +1,6 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Name:		ktuberling
-Version:	17.04.2
+Version:	17.08.0
 Release:	1
 Epoch:		1
 Summary:	"Potato editor" game
@@ -8,13 +8,13 @@ Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
 URL:		http://www.kde.org/applications/games/ktuberling/
 Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
-BuildRequires:	libkdegames-devel
-BuildRequires:	kdelibs4-devel
-BuildRequires: 	cmake(KDEGames)
+BuildRequires:	cmake ninja cmake(ECM)
+BuildRequires: 	cmake(KF5KDEGames)
 BuildRequires:	cmake(Qt5Test)
 BuildRequires:	cmake(KF5Notifications)
 BuildRequires:	cmake(KF5NotifyConfig)
 BuildRequires:	cmake(KF5KDELibs4Support)
+BuildRequires:	cmake(KF5Completion) cmake(KF5Config) cmake(KF5ConfigWidgets) cmake(KF5CoreAddons) cmake(KF5Crash) cmake(KF5DBusAddons) cmake(KF5I18n) cmake(KF5WidgetsAddons) cmake(KF5XmlGui) cmake(Qt5Core) cmake(Qt5Gui) cmake(Qt5PrintSupport) cmake(Qt5Svg) cmake(Qt5Widgets) cmake(Qt5Xml) cmake(Phonon4Qt5)
 
 %description
 KTuberling is a "potato editor" game intended for small children and adults
