@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   ktuberling-17.12.1.tar.xz: ad2378bd785343b0b7a6bfb82c1af7c677ee1a52
+sources:
+  ktuberling-17.12.2.tar.xz: 6781c7c83beb0721e5f0606690cc8fd782768559
