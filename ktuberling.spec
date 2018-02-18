@@ -14,7 +14,7 @@ BuildRequires:	cmake(Qt5Test)
 BuildRequires:	cmake(KF5Notifications)
 BuildRequires:	cmake(KF5NotifyConfig)
 BuildRequires:	cmake(KF5KDELibs4Support)
-BuildRequires:	cmake(KF5Completion) cmake(KF5Config) cmake(KF5ConfigWidgets) cmake(KF5CoreAddons) cmake(KF5Crash) cmake(KF5DBusAddons) cmake(KF5I18n) cmake(KF5WidgetsAddons) cmake(KF5XmlGui) cmake(Qt5Core) cmake(Qt5Gui) cmake(Qt5PrintSupport) cmake(Qt5Svg) cmake(Qt5Widgets) cmake(Qt5Xml) cmake(Phonon4Qt5)
+BuildRequires:	cmake(KF5Completion) cmake(KF5Config) cmake(KF5ConfigWidgets) cmake(KF5CoreAddons) cmake(KF5Crash) cmake(KF5DBusAddons) cmake(KF5I18n) cmake(KF5WidgetsAddons) cmake(KF5XmlGui) cmake(Qt5Core) cmake(Qt5Gui) cmake(Qt5PrintSupport) cmake(Qt5Svg) cmake(Qt5Widgets) cmake(Qt5Xml) cmake(Phonon4Qt5) cmake(Qt5Multimedia)
 
 %description
 KTuberling is a "potato editor" game intended for small children and adults
