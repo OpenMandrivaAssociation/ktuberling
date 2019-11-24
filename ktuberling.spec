@@ -1,6 +1,6 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Name:		ktuberling
-Version:	19.08.3
+Version:	19.11.80
 Release:	1
 Epoch:		1
 Summary:	"Potato editor" game
@@ -32,6 +32,7 @@ make the funniest faces you can.
 %{_kde5_iconsdir}/hicolor/*/mimetypes/application-x-tuberling.png
 %{_datadir}/ktuberling/sounds/en.soundtheme
 %{_datadir}/ktuberling/sounds/en/*.ogg
+%{_datadir}/ktuberling/sounds/id.soundtheme
 %{_datadir}/kxmlgui5/ktuberling/ktuberlingui.rc
 %{_datadir}/metainfo/org.kde.ktuberling.appdata.xml
 %lang(ca) %{_datadir}/ktuberling/sounds/ca.soundtheme
