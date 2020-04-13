@@ -8,6 +8,7 @@ Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
 URL:		http://www.kde.org/applications/games/ktuberling/
 Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/%{name}-%{version}.tar.xz
+Patch0:		ktuberling-20.03.90-qt-5.15.patch
 BuildRequires:	cmake ninja cmake(ECM)
 BuildRequires: 	cmake(KF5KDEGames)
 BuildRequires:	cmake(Qt5Test)
@@ -85,7 +86,7 @@ make the funniest faces you can.
 #------------------------------------------------------------------------------
 
 %prep
-%setup -q
+%autosetup -p1
 %cmake_kde5
 
 %build
