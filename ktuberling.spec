@@ -1,6 +1,9 @@
+# Workaround for problem with debugsource generation
+%global _empty_manifest_terminate_build 0
+
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Name:		ktuberling
-Version:	21.07.90
+Version:	21.08.0
 Release:	1
 Epoch:		1
 Summary:	"Potato editor" game
