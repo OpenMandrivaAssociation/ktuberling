@@ -3,7 +3,7 @@
 
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Name:		ktuberling
-Version:	22.04.2
+Version:	22.04.3
 Release:	1
 Epoch:		1
 Summary:	"Potato editor" game
