@@ -3,7 +3,7 @@
 
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Name:		ktuberling
-Version:	22.04.3
+Version:	22.07.90
 Release:	1
 Epoch:		1
 Summary:	"Potato editor" game
@@ -65,6 +65,8 @@ make the funniest faces you can.
 %lang(nds) %{_datadir}/ktuberling/sounds/nds
 %lang(nl) %{_datadir}/ktuberling/sounds/nl.soundtheme
 %lang(nl) %{_datadir}/ktuberling/sounds/nl
+%lang(nn) %{_datadir}/ktuberling/sounds/nn.soundtheme
+%lang(nn) %{_datadir}/ktuberling/sounds/nn
 %lang(pt) %{_datadir}/ktuberling/sounds/pt.soundtheme
 %lang(pt) %{_datadir}/ktuberling/sounds/pt
 %lang(ro) %{_datadir}/ktuberling/sounds/ro.soundtheme
