@@ -3,7 +3,7 @@
 
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Name:		ktuberling
-Version:	22.08.3
+Version:	22.12.0
 Release:	1
 Epoch:		1
 Summary:	"Potato editor" game
@@ -36,7 +36,6 @@ make the funniest faces you can.
 %{_datadir}/ktuberling/sounds/en.soundtheme
 %{_datadir}/ktuberling/sounds/en/*.ogg
 %{_datadir}/ktuberling/sounds/id.soundtheme
-%{_datadir}/kxmlgui5/ktuberling/ktuberlingui.rc
 %{_datadir}/metainfo/org.kde.ktuberling.appdata.xml
 %{_datadir}/qlogging-categories5/ktuberling.categories
 %lang(ca) %{_datadir}/ktuberling/sounds/ca.soundtheme
@@ -75,8 +74,14 @@ make the funniest faces you can.
 %lang(ru) %{_datadir}/ktuberling/sounds/ru
 %lang(sl) %{_datadir}/ktuberling/sounds/sl.soundtheme
 %lang(sl) %{_datadir}/ktuberling/sounds/sl
-%lang(sr) %{_datadir}/ktuberling/sounds/sr.soundtheme
 %lang(sr) %{_datadir}/ktuberling/sounds/sr
+%lang(sr) %{_datadir}/ktuberling/sounds/sr.soundtheme
+%lang(sr@ijekavian) %{_datadir}/ktuberling/sounds/sr@ijekavian
+%lang(sr@ijekavian) %{_datadir}/ktuberling/sounds/sr@ijekavian.soundtheme
+%lang(sr@ijekavianlatin) %{_datadir}/ktuberling/sounds/sr@ijekavianlatin
+%lang(sr@ijekavianlatin) %{_datadir}/ktuberling/sounds/sr@ijekavianlatin.soundtheme
+%lang(sr@latin) %{_datadir}/ktuberling/sounds/sr@latin
+%lang(sr@latin) %{_datadir}/ktuberling/sounds/sr@latin.soundtheme
 %lang(sv) %{_datadir}/ktuberling/sounds/sv.soundtheme
 %lang(sv) %{_datadir}/ktuberling/sounds/sv
 %lang(uk) %{_datadir}/ktuberling/sounds/uk.soundtheme
