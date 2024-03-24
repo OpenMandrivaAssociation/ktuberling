@@ -6,8 +6,8 @@
 
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Name:		plasma6-ktuberling
-Version:	24.02.0
-Release:	%{?git:0.%{git}.}2
+Version:	24.02.1
+Release:	%{?git:0.%{git}.}1
 Summary:	"Potato editor" game
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
