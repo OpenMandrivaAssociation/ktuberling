@@ -6,7 +6,7 @@
 
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Name:		plasma6-ktuberling
-Version:	24.05.2
+Version:	24.08.0
 Release:	%{?git:0.%{git}.}1
 Summary:	"Potato editor" game
 Group:		Graphical desktop/KDE
@@ -42,6 +42,7 @@ make the funniest faces you can.
 %{_datadir}/ktuberling/sounds/en.soundtheme
 %{_datadir}/ktuberling/sounds/en/*.ogg
 %{_datadir}/metainfo/org.kde.ktuberling.appdata.xml
+%{_datadir}/qlogging-categories6/ktuberling.renamecategories
 %{_datadir}/qlogging-categories6/ktuberling.categories
 %lang(ca) %{_datadir}/ktuberling/sounds/ca.soundtheme
 %lang(ca) %{_datadir}/ktuberling/sounds/ca
