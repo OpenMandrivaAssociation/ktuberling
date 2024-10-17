@@ -9,7 +9,7 @@ Epoch:		1
 Summary:	"Potato editor" game
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
-URL:		http://www.kde.org/applications/games/ktuberling/
+URL:		https://www.kde.org/applications/games/ktuberling/
 Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	cmake ninja cmake(ECM)
 BuildRequires: 	cmake(KF5KDEGames)
