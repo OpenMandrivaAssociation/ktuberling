@@ -6,7 +6,7 @@
 
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Name:		ktuberling
-Version:	25.04.0
+Version:	25.04.3
 Release:	%{?git:0.%{git}.}1
 Summary:	"Potato editor" game
 Group:		Graphical desktop/KDE
@@ -25,12 +25,17 @@ BuildRequires:	cmake(KF6Notifications)
 BuildRequires:	cmake(KF6NotifyConfig)
 BuildRequires:	cmake(KF6Completion) cmake(KF6Config) cmake(KF6ConfigWidgets) cmake(KF6CoreAddons) cmake(KF6Crash) cmake(KF6DBusAddons) cmake(KF6I18n) cmake(KF6WidgetsAddons) cmake(KF6XmlGui) cmake(Qt6Core) cmake(Qt6Gui) cmake(Qt6PrintSupport) cmake(Qt6Svg) cmake(Qt6Widgets) cmake(Qt6Xml) cmake(Phonon4Qt6) cmake(Qt6Multimedia) cmake(KF6KIO) cmake(KF6DocTools)
 
+%rename plasma6-ktuberling
+
+BuildSystem:	cmake
+BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
+
 %description
 KTuberling is a "potato editor" game intended for small children and adults
 who remain young at heart. The game has no winner; the only purpose is to
 make the funniest faces you can.
 
-%files -f ktuberling.lang
+%files -f %{name}.lang
 %{_bindir}/ktuberling
 %{_datadir}/applications/org.kde.ktuberling.desktop
 %{_datadir}/ktuberling/pics/*.theme
@@ -98,18 +103,3 @@ make the funniest faces you can.
 %lang(uk) %{_datadir}/ktuberling/sounds/uk
 %lang(wa) %{_datadir}/ktuberling/sounds/wa.soundtheme
 %lang(wa) %{_datadir}/ktuberling/sounds/wa
-
-#------------------------------------------------------------------------------
-
-%prep
-%autosetup -p1 -n ktuberling-%{?git:%{gitbranchd}}%{!?git:%{version}}
-%cmake \
-	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
-	-G Ninja
-
-%build
-%ninja -C build
-
-%install
-%ninja_install -C build
-%find_lang ktuberling --with-html --with-man
