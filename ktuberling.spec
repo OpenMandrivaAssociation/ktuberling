@@ -6,7 +6,7 @@
 
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Name:		ktuberling
-Version:	25.12.2
+Version:	25.12.3
 Release:	%{?git:0.%{git}.}1
 Summary:	"Potato editor" game
 Group:		Graphical desktop/KDE
